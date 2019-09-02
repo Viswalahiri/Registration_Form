@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form in HTML</title>
+</head>
+<body>
+	
+		<h1>Register</h1>
+		<!-- All Label Statements -->
+		
+		<!-- <label for="e_mail">E-Mail</label>
+		<label for="t_c">I agree to the terms and conditions</label>
+		<label></label>
+		 -->
+
+		<!-- -- -->
+		<!-- All Id Statements -->
+
+		
+			<form>
+
+				<div>
+					<!-- Name Statement -->
+					<label for="f_name">First Name:</label>
+					<input id="f_name" type="text" name="First Name" placeholder="John" required>
+					<label for="l_name">Last Name:</label>
+					<input id="l_name" type="text" name="Last Name" placeholder="Smith" required>
+					<!-- ** -->
+				</div>
+			
+				<div>
+					<!-- Gender Statement -->
+					<label for="male" >Male</label>
+					<input type="radio" name="Gender" id="male" required>
+					
+					<label for="female" >Female</label>
+					<input type="radio" name="Gender" id="female" required>
+					
+					<label for="other" >Other</label>
+					<input type="radio" name="Gender" id="other" required>
+					<!-- ** -->
+				</div>
+				
+				<div>
+					<!-- Email and Password -->
+					<label for="e_mail">Email:</label>
+					<input id="e_mail" type="email" name="E-mail" placeholder="your email" required>
+
+					<label for="p_word">Password:</label>
+					<input id="p_word" type="password" name="Password" placeholder= "your password" minlength="5" maxlength="10" required>
+					<!-- ** -->
+				</div>
+				<!-- OR USE
+				
+				<input id="p_word" type="password" name="Password" placeholder= "your password" pattern=".{5,10}" required title="5 to 10 characters">> --> 
+				
+				<div>
+					<!-- Birthday Statement -->
+					<label for="birthday">Birthday:</label>
+					<select id="birthday" name="Month" >
+						<option  selected disabled>Month</option>
+						<option>April</option>
+						<option>May</option>
+						<option>June</option>
+					</select>
+					<select id="birthday" name="Day">
+						<option  selected disabled>Day</option>
+						<option>23</option>
+						<option>24</option>
+						<option>25</option>
+					</select>				
+					<select id="birthday" name="Year">
+						<option  selected disabled>Year</option>
+						#<option>Year</option>
+						<option>2000</option>
+						<option>2001</option>
+						<option>2002</option>
+					</select >
+					<!-- ** -->
+				</div>
+				
+				<div>
+					<!-- Terms and conditions Statement -->
+					<label for="t_c">I agree to the terms and conditions</label>
+					<input id="t_c" type="checkbox" name="Terms_and_Conditions" required="">
+					<!-- ** -->
+				</div>
+				<!-- Submit button -->
+				<button>Submit</button> 
+				<!-- ** -->
+			</form>
+		<!-- -- -->
+		<!-- Here br can also be implemented instead ofdiv -->
+
+</body>
+</html>
